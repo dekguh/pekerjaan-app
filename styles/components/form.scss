@@ -1,0 +1,23 @@
+.form-control {
+    padding: 13px 20px;
+    border-radius: 0 !important;
+    height: auto;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
+    option {
+        margin-bottom: 8px;
+        padding: 4px;
+    }
+}
+
+.input-group {
+    .input-group-text {
+        background: transparent;
+        border-radius: 0 !important;
+        color: $color-primary;
+    }
+}

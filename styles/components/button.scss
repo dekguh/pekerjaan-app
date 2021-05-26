@@ -1,0 +1,27 @@
+.btn {
+    padding: 13px 25px;
+    border-radius: 0 !important;
+    transition-duration: .5s;
+
+    &.btn-primary {
+        color: #FFFFFF;
+        background-color: $color-primary;
+        border-color: $color-primary;
+
+        &:hover {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+        }
+    }
+
+    &.btn-navy {
+        color: #FFFFFF;
+        background-color: $color-navy-primary;
+        border-color: $color-navy-primary;
+
+        &:hover {
+            background-color: $color-navy-secondary;
+            border-color: $color-navy-secondary;
+        }
+    }
+}
