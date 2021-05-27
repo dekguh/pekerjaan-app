@@ -1,6 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 
-const ButtonCustom = ({ style, classes, btnClassType, onClick, type, text }) => {
+const ButtonCustom = ({ style, classes, btnClassType, onClick, type, text, icon }) => {
     const classType = btnClassType == 'navy' ? 'btn btn-navy' : 'btn btn-primary';
 
     return(
@@ -10,7 +11,8 @@ const ButtonCustom = ({ style, classes, btnClassType, onClick, type, text }) => 
             className={classes ? `${classType} ${classes}` : `${classType}`}
             onClick={onClick}
         >
-            {text}
+            {icon && <i className='mr-2'><FontAwesomeIcon icon={icon} /></i>}
+            <span className='d-inline-block'>{text}</span>
         </button>
     );
 }

@@ -1,0 +1,147 @@
+.navbar__custom {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+}
+
+.navbar__custom-logo-wrap {
+    flex: 0 1 auto;
+    padding-right: 15px;
+}
+
+.navbar__custom-list-wrap {
+    flex: 1 1 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar__custom-button-wrap {
+    flex: 0 1 auto;
+    padding-left: 15px;
+}
+
+.navbar__custom-toggle-wrap {
+    flex: 1 1 auto;
+    display: none;
+    text-align: right;
+}
+
+.navbar__custom-logo {
+    width: 140px;
+}
+
+.navbar__custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+    .navbar__custom-item {
+        padding: 4px 12px;
+
+        &.active {
+            .navbar__custom-link {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .navbar__custom-link {
+        color: $color-black-secondary;
+        transition: .6s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.navbar__wrapper {
+    padding: 20px 120px;
+}
+
+.navbar__custom-item-logo {
+    text-align: center;
+    border-bottom: 1px solid $color-gray-primary;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.navbar__custom-item-contact {
+    border-top: 1px solid $color-gray-primary;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+@media (max-width: 1439.98px) {
+    .navbar__wrapper {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar__custom-button-wrap {
+        display: none;
+    }
+
+    .navbar__custom-list-wrap {
+        flex: 1 1 auto;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar__custom-list-wrap {
+        padding-right: 0;
+    }
+
+    .navbar__custom-toggle-wrap {
+        display: block;
+    }
+
+    .navbar__custom-list {
+        flex-flow: column nowrap;
+        justify-content: unset;
+        padding: 20px;
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 0;
+        left: -280px;
+        bottom: 0;
+        width: 280px;
+        border-right: 1px solid $color-gray-primary;
+        transition: .8s;
+    
+        &.showing {
+            left: 0;
+        }
+
+        .navbar__custom-item {
+            padding: 0 0 15px;
+
+            &.active {
+                .navbar__custom-link {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .navbar__custom-link {
+            
+        }
+    }
+
+    .navbar__custom-item-logo {
+        display: block;
+    }
+
+    .navbar__custom-item-contact {
+        display: block;
+    }
+}
