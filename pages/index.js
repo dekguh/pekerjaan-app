@@ -7,6 +7,7 @@ import Input from '../comps/atomics/Form/Input';
 import SelectMultiple from '../comps/atomics/Form/SelectMultiple';
 import FormGroupIcon from '../comps/molecules/FormGroupIcon';
 import { faEnvelope, faMarker } from '@fortawesome/free-solid-svg-icons';
+import Range from '../comps/atomics/Form/Range';
 
 export default function Home() {
   return (
@@ -39,6 +40,12 @@ export default function Home() {
             <FormGroupIcon icon={faEnvelope}>
               <Input placeholder='tes doang' />
             </FormGroupIcon>
+          </Col>
+
+          <Col md={6}>
+            <FormGroup textLabel='tes'>
+              <Range defaultValue={20} />
+            </FormGroup>
           </Col>
         </Row>
       </Container>

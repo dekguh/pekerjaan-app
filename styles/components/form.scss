@@ -21,3 +21,16 @@
         color: $color-primary;
     }
 }
+
+.form-control-range {
+    transition: .5s;
+    height: 4px;
+
+    &::-moz-range-thumb {
+        background-color: $color-primary;
+    }
+
+    &::-webkit-slider-thumb {
+        background-color: $color-primary;
+    }
+}
