@@ -1,0 +1,19 @@
+.anim-shape-dotted-hero {
+    bottom: 0;
+    right: 0;
+    animation: -image-hero-anim-dotted 2s infinite linear;
+}
+
+@keyframes -image-hero-anim-dotted {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 15px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}

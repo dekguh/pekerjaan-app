@@ -1,0 +1,30 @@
+.hero__wrapper {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.home__hero-content-right {
+    position: relative;
+}
+
+.home__hero-image {
+    width: 100%;
+    top: 0px;
+    position: relative;
+    animation: -image-hero-anim 2s infinite linear;
+}
+
+@keyframes -image-hero-anim {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 15px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}

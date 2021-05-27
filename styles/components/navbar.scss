@@ -111,29 +111,20 @@
         padding: 20px;
         background-color: #FFFFFF;
         position: fixed;
+        z-index: 999;
         top: 0;
         left: -280px;
         bottom: 0;
         width: 280px;
         border-right: 1px solid $color-gray-primary;
         transition: .8s;
-    
+
         &.showing {
             left: 0;
         }
 
         .navbar__custom-item {
             padding: 0 0 15px;
-
-            &.active {
-                .navbar__custom-link {
-                    color: $color-primary;
-                }
-            }
-        }
-
-        .navbar__custom-link {
-            
         }
     }
 
