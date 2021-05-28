@@ -11,8 +11,8 @@ const ButtonLink = ({ style, classes, btnClassType, href, text, icon }) => {
                 style={style}
                 className={classes ? `${classType} ${classes}` : `${classType}`}
             >
-                {icon && <i className='mr-2'><FontAwesomeIcon icon={icon} /></i>}
-                <span className='d-inline-block'>{text}</span>
+                {icon && <i><FontAwesomeIcon icon={icon} /></i>}
+                {text && <span className='d-inline-block ml-2'>{text}</span>}
             </a>
         </Link>
     );

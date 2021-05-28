@@ -11,15 +11,14 @@ const ButtonCustom = ({ style, classes, btnClassType, onClick, type, text, icon 
             className={classes ? `${classType} ${classes}` : `${classType}`}
             onClick={onClick}
         >
-            {icon && <i className='mr-2'><FontAwesomeIcon icon={icon} /></i>}
-            <span className='d-inline-block'>{text}</span>
+            {icon && <i><FontAwesomeIcon icon={icon} /></i>}
+            {text && <span className='d-inline-block ml-2'>{text}</span>}
         </button>
     );
 }
 
 ButtonCustom.defaultProps = {
-    type: 'button',
-    text: 'Button'
+    type: 'button'
 }
 
 export default ButtonCustom;
