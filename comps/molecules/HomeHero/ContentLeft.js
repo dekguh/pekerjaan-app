@@ -1,4 +1,5 @@
 import Title from "../../atomics/Title"
+import HomeHeroSearch from "../../organisms/HomeHeroSearch"
 
 const ContentLeft = () => {
     return (
@@ -9,6 +10,7 @@ const ContentLeft = () => {
             <p>
                 Temukan pekerjaan dengan mudah di pekerjaan.app, tersedia berbagai lowongan pekerjaan diseluruh indonesia dengan berbagai kategori
             </p>
+            <HomeHeroSearch />
         </div>
     )
 }
