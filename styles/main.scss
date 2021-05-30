@@ -16,8 +16,10 @@ Name: Pekerjaan.app
 @import 'bases/reset';
 /*------------ global -------------*/
 @import 'bases/global';
-/*----------- section -------------*/
+/*------------- home --------------*/
 @import 'section/home_hero';
-/*----------- job -------------*/
+/*------------- job ---------------*/
 @import 'components/cardJob';
 @import 'section/job_list';
+/*----------- footer --------------*/
+@import 'section/footer';
