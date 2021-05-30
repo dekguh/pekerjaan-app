@@ -1,7 +1,6 @@
-Technology: NextJS, Bootstrap, atomic design, Strapi (Headless CMS API), and other
-Author: I Kadek Teguh Mahesa
-E-mail: kadekteguhmahesa@gmail.com
-
+Technology: NextJS, Bootstrap, atomic design, Strapi (Headless CMS API), and other<br>
+Author: I Kadek Teguh Mahesa<br>
+E-mail: kadekteguhmahesa@gmail.com<br><br>
 
 ## Project status
 project in progress
