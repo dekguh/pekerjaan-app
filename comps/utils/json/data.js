@@ -58,3 +58,70 @@ export const jsonListProvinsi = [
     'Sumatra_Selatan',
     'Sumatra_Utara'
 ];
+
+export const jsonListDataJob = [
+    {
+        id: 1,
+        title: "Web Designer",
+        company: "Pekerjaan.APP",
+        descriptionCompany: "Pekerjaan.app merupakan sebuah platform yang digunakan untuk menemukan pekerjaan, terdapat ribuan lowongan kerja setiap bulan. startup ini berlokasi di bali.",
+        jobDescription: "##### **Requirement**\n- html, css, javascript\n- framework CSS (Bootstrap)\n- paham prinsip UI/UX\n- cross browser testing\n- paham dasar PHP (nilai plus)\n- paham bahasa inggris\n\n##### **Responsibility**\n- membuat desain berdasar brief\n- melakukan testing pada design yang sudah dibuat\n- membuat design yang modern berdasarkan trend\n\n##### **Benefit**\n- BPJS\n- uang makan\n- karir yang bagus\n- kursus gratis\n- bonus\n\nanda bisa langsung mengirim CV serta portfolio ke email kami yaitu hrd@pekerjaan.app\n",
+        typeJob: "Full_Time",
+        isRemote: true,
+        salary: "4000000",
+        isNegotiable: false,
+        categoryJob: "Design",
+        isUrgent: false,
+        isOnsite: true,
+        provinsi: "Bali",
+        kabupaten: "Badung",
+        published_at: "2021-05-28T02:16:32.885Z",
+        created_at: "2021-05-28T02:16:29.060Z",
+        updated_at: "2021-05-28T02:46:39.464Z",
+        "companyLogo": {
+            "url": "/uploads/logo_13_5b4183f3b0.svg"
+        }
+    },{
+        id: 2,
+        title: "Frontend Programmer",
+        company: "Pekerjaan.APP",
+        descriptionCompany: "Pekerjaan.app merupakan sebuah platform yang digunakan untuk menemukan pekerjaan, terdapat ribuan lowongan kerja setiap bulan. startup ini berlokasi di bali.",
+        jobDescription: "##### **Requirement**\n- html, css, javascript\n- framework CSS (Bootstrap)\n- paham prinsip UI/UX\n- cross browser testing\n- paham dasar PHP (nilai plus)\n- paham bahasa inggris\n\n##### **Responsibility**\n- membuat desain berdasar brief\n- melakukan testing pada design yang sudah dibuat\n- membuat design yang modern berdasarkan trend\n\n##### **Benefit**\n- BPJS\n- uang makan\n- karir yang bagus\n- kursus gratis\n- bonus\n\nanda bisa langsung mengirim CV serta portfolio ke email kami yaitu hrd@pekerjaan.app\n",
+        typeJob: "Full_Time",
+        isRemote: true,
+        salary: "4000000",
+        isNegotiable: false,
+        categoryJob: "Software_Engineering",
+        isUrgent: false,
+        isOnsite: true,
+        provinsi: "Bali",
+        kabupaten: "Badung",
+        published_at: "2021-05-28T02:16:32.885Z",
+        created_at: "2021-05-28T02:16:29.060Z",
+        updated_at: "2021-05-28T02:46:39.464Z",
+        "companyLogo": {
+            "url": "/uploads/logo_13_5b4183f3b0.svg"
+        }
+    },{
+        id: 3,
+        title: "Backend Programmer",
+        company: "Pekerjaan.APP",
+        descriptionCompany: "Pekerjaan.app merupakan sebuah platform yang digunakan untuk menemukan pekerjaan, terdapat ribuan lowongan kerja setiap bulan. startup ini berlokasi di bali.",
+        jobDescription: "##### **Requirement**\n- html, css, javascript\n- framework CSS (Bootstrap)\n- paham prinsip UI/UX\n- cross browser testing\n- paham dasar PHP (nilai plus)\n- paham bahasa inggris\n\n##### **Responsibility**\n- membuat desain berdasar brief\n- melakukan testing pada design yang sudah dibuat\n- membuat design yang modern berdasarkan trend\n\n##### **Benefit**\n- BPJS\n- uang makan\n- karir yang bagus\n- kursus gratis\n- bonus\n\nanda bisa langsung mengirim CV serta portfolio ke email kami yaitu hrd@pekerjaan.app\n",
+        typeJob: "Full_Time",
+        isRemote: true,
+        salary: "4000000",
+        isNegotiable: false,
+        categoryJob: "Software_Engineering",
+        isUrgent: false,
+        isOnsite: true,
+        provinsi: "Bali",
+        kabupaten: "Badung",
+        published_at: "2021-05-28T02:16:32.885Z",
+        created_at: "2021-05-28T02:16:29.060Z",
+        updated_at: "2021-05-28T02:46:39.464Z",
+        "companyLogo": {
+            "url": "/uploads/logo_13_5b4183f3b0.svg"
+        }
+    }
+]
