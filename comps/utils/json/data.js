@@ -78,8 +78,8 @@ export const jsonListDataJob = [
         published_at: "2021-05-28T02:16:32.885Z",
         created_at: "2021-05-28T02:16:29.060Z",
         updated_at: "2021-05-28T02:46:39.464Z",
-        "companyLogo": {
-            "url": "/uploads/logo_13_5b4183f3b0.svg"
+        companyLogo: {
+            url: "/company_logo/logo-13.png"
         }
     },{
         id: 2,
@@ -99,8 +99,8 @@ export const jsonListDataJob = [
         published_at: "2021-05-28T02:16:32.885Z",
         created_at: "2021-05-28T02:16:29.060Z",
         updated_at: "2021-05-28T02:46:39.464Z",
-        "companyLogo": {
-            "url": "/uploads/logo_13_5b4183f3b0.svg"
+        companyLogo: {
+            url: "/company_logo/logo-13.png"
         }
     },{
         id: 3,
@@ -120,8 +120,92 @@ export const jsonListDataJob = [
         published_at: "2021-05-28T02:16:32.885Z",
         created_at: "2021-05-28T02:16:29.060Z",
         updated_at: "2021-05-28T02:46:39.464Z",
-        "companyLogo": {
-            "url": "/uploads/logo_13_5b4183f3b0.svg"
+        companyLogo: {
+            url: "/company_logo/logo-13.png"
+        }
+    },{
+        id: 4,
+        title: "Customer Service",
+        company: "Pekerjaan.APP",
+        descriptionCompany: "Pekerjaan.app merupakan sebuah platform yang digunakan untuk menemukan pekerjaan, terdapat ribuan lowongan kerja setiap bulan. startup ini berlokasi di bali.",
+        jobDescription: "##### **Requirement**\n- Fasih bahasa inggrid & indonesia\n- Literasi baik\n- Kerja tim yang baik\n- Berpengalaman dibidang customer support\n- Cepat belajar\n- Berpenampilan menarik\n\n##### **Responsibility**\n- memberikan support ke customer\n- memberikan penjelasan\n- membantu mengatasi permasalahan customer\n\n##### **Benefit**\n- BPJS\n- uang makan\n- karir yang bagus\n- kursus gratis\n- bonus\n\nanda bisa langsung mengirim CV serta portfolio ke email kami yaitu hrd@pekerjaan.app\n",
+        typeJob: "Full_Time",
+        isRemote: true,
+        salary: "2800000",
+        isNegotiable: false,
+        categoryJob: "Other",
+        isUrgent: false,
+        isOnsite: true,
+        provinsi: "Bali",
+        kabupaten: "Badung",
+        published_at: "2021-05-28T02:16:32.885Z",
+        created_at: "2021-05-28T02:16:29.060Z",
+        updated_at: "2021-05-28T02:46:39.464Z",
+        companyLogo: {
+            url: "/company_logo/logo-13.png"
+        }
+    },{
+        id: 5,
+        title: "Font Designer",
+        company: "Pekerjaan.APP",
+        descriptionCompany: "Pekerjaan.app merupakan sebuah platform yang digunakan untuk menemukan pekerjaan, terdapat ribuan lowongan kerja setiap bulan. startup ini berlokasi di bali.",
+        jobDescription: "##### **Requirement**\n- Fasih bahasa inggrid & indonesia\n- Pagam Typography\n- Kerja tim yang baik\n- Berpengalaman dibidang font design\n- Cepat belajar\n- Berpenampilan menarik\n\n##### **Responsibility**\n- membuat design font\n\n##### **Benefit**\n- BPJS\n- uang makan\n- karir yang bagus\n- kursus gratis\n- bonus\n\nanda bisa langsung mengirim CV serta portfolio ke email kami yaitu hrd@pekerjaan.app\n",
+        typeJob: "Full_Time",
+        isRemote: true,
+        salary: "2800000",
+        isNegotiable: false,
+        categoryJob: "Design",
+        isUrgent: false,
+        isOnsite: true,
+        provinsi: "Bali",
+        kabupaten: "Badung",
+        published_at: "2021-05-28T02:16:32.885Z",
+        created_at: "2021-05-28T02:16:29.060Z",
+        updated_at: "2021-05-28T02:46:39.464Z",
+        companyLogo: {
+            url: "/company_logo/logo-13.png"
+        }
+    },{
+        id: 6,
+        title: "Graphic Designer",
+        company: "Pekerjaan.APP",
+        descriptionCompany: "Pekerjaan.app merupakan sebuah platform yang digunakan untuk menemukan pekerjaan, terdapat ribuan lowongan kerja setiap bulan. startup ini berlokasi di bali.",
+        jobDescription: "##### **Requirement**\n- Fasih bahasa inggrid & indonesia\n- Paham design graphic\n- Kerja tim yang baik\n- Bisa mengunakan tool design seperti AI, Corel dan Photoshop\n- Cepat belajar\n- Berpenampilan menarik\n\n##### **Responsibility**\n- membuat design graphic\n\n##### **Benefit**\n- BPJS\n- uang makan\n- karir yang bagus\n- kursus gratis\n- bonus\n\nanda bisa langsung mengirim CV serta portfolio ke email kami yaitu hrd@pekerjaan.app\n",
+        typeJob: "Full_Time",
+        isRemote: true,
+        salary: "3500000",
+        isNegotiable: false,
+        categoryJob: "Design",
+        isUrgent: false,
+        isOnsite: true,
+        provinsi: "Bali",
+        kabupaten: "Badung",
+        published_at: "2021-05-28T02:16:32.885Z",
+        created_at: "2021-05-28T02:16:29.060Z",
+        updated_at: "2021-05-28T02:46:39.464Z",
+        companyLogo: {
+            url: "/company_logo/logo-13.png"
+        }
+    },{
+        id: 7,
+        title: "WordPress Developer",
+        company: "Pekerjaan.APP",
+        descriptionCompany: "Pekerjaan.app merupakan sebuah platform yang digunakan untuk menemukan pekerjaan, terdapat ribuan lowongan kerja setiap bulan. startup ini berlokasi di bali.",
+        jobDescription: "##### **Requirement**\n- Fasih bahasa inggrid & indonesia\n- PHP, CSS, JS\n- Paham WordPress Development\n- Paham Elementor, Woo, Dan Plugin lainya\n- Cepat belajar\n- Berpenampilan menarik\n\n##### **Responsibility**\n- membuat tema dan plugin\n\n##### **Benefit**\n- BPJS\n- uang makan\n- karir yang bagus\n- kursus gratis\n- bonus\n\nanda bisa langsung mengirim CV serta portfolio ke email kami yaitu hrd@pekerjaan.app\n",
+        typeJob: "Full_Time",
+        isRemote: true,
+        salary: "4000000",
+        isNegotiable: false,
+        categoryJob: "Software_Engineering",
+        isUrgent: false,
+        isOnsite: true,
+        provinsi: "Bali",
+        kabupaten: "Badung",
+        published_at: "2021-05-28T02:16:32.885Z",
+        created_at: "2021-05-28T02:16:29.060Z",
+        updated_at: "2021-05-28T02:46:39.464Z",
+        companyLogo: {
+            url: "/company_logo/logo-13.png"
         }
     }
 ]
