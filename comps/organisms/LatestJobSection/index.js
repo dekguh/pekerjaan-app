@@ -2,7 +2,7 @@ import { faListAlt } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
 import ButtonLink from '../../atomics/ButtonLink';
-import CardJob from '../../molecules/cardJob'
+import CardJob from '../../molecules/CardJob';
 import TitleSectionCenter from '../../molecules/TitleSectionCenter'
 
 const LatestJobSection = ({ classes, dataLatest }) => {
