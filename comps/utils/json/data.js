@@ -209,3 +209,5 @@ export const jsonListDataJob = [
         }
     }
 ]
+
+export const jsonListQuickLink = ['kontak', 'tentang', 'jobs'];
