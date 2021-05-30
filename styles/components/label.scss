@@ -1,0 +1,19 @@
+.label__custom {
+    padding: 8px 20px;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 14px;
+
+    &.danger {
+        background-color: $color-danger;
+    }
+
+    &.success {
+        background-color: $color-success;
+    }
+
+    &.info {
+        background-color: $color-primary;
+    }
+}
