@@ -1,0 +1,51 @@
+.card__job {
+    padding: 20px;
+    border: 1px solid $color-gray-primary;
+
+    .card__job-top {
+        margin-bottom: 15px;
+
+        i {
+            color: $color-primary;
+        }
+    }
+
+    .card__job-header {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid $color-gray-primary;
+
+        .card__job-header-logo {
+            flex: 0 1 auto;
+
+            img {
+                width: 55px;
+            }
+        }
+
+        .card__job-header-detail {
+            flex: 1 1 auto;
+            padding-left: 15px;
+
+            .card__job-header-title {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    .card__job-body {
+        border-bottom: 1px solid $color-gray-primary;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .card__job-footer {
+        .card__job-date {
+            margin-top: 15px;
+            display: block;
+            font-size: 14px;
+        }
+    }
+}
