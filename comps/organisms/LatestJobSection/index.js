@@ -1,9 +1,19 @@
-import React from 'react'
+import { faListAlt } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
+import ButtonLink from '../../atomics/ButtonLink';
 import CardJob from '../../molecules/cardJob'
 import TitleSectionCenter from '../../molecules/TitleSectionCenter'
 
-const LatestJobSection = ({ classes }) => {
+const LatestJobSection = ({ classes, dataLatest }) => {
+    const [dataSort, setDataSort] = useState([]);
+
+    useEffect(() => {
+        const dataSortir = dataLatest.sort((a, b) => b.id - a.id);
+        const dataSlice = dataSortir.slice(0, 6)
+        setDataSort(dataSlice);
+    }, []);
+
     return (
         <div className={classes}>
             <Container>
@@ -16,52 +26,29 @@ const LatestJobSection = ({ classes }) => {
                 />
 
                 <Row>
-                    <Col lg='4'>
+                {dataSort.map((data, i) => {
+                    return (
+                    <Col key={i} lg='4'>
                         <CardJob
                             classes='margin-bottom-30'
-                            link='#'
-                            title='Web Designer'
-                            company='Pekerjaan.APP'
-                            logo='/company_logo/logo-13.png'
-                            isUrgent={true}
-                            jobType='Freelance'
-                            isRemote={true}
-                            date='29 mei 2021'
-                            district='Badung'
-                            province='Bali'
+                            link={`/jobs/detail/${data.id}-${data.title.replace(/ /g, '-')}`}
+                            title={data.title}
+                            company={data.company}
+                            logo={data.companyLogo.url}
+                            isUrgent={data.isUrgent}
+                            jobType={data.typeJob.replace(/_/g, ' ')}
+                            isRemote={data.isRemote}
+                            date={data.published_at.replace('Z', '').replace('T', ' ').substring(0, 10).replace(/-/g, '/')}
+                            district={data.kabupaten}
+                            province={data.provinsi}
                         />
-                    </Col>
-                    <Col lg='4'>
-                        <CardJob
-                            classes='margin-bottom-30'
-                            link='#'
-                            title='Backend Developer (node.js)'
-                            company='Pekerjaan.APP'
-                            logo='/company_logo/logo-13.png'
-                            isUrgent={true}
-                            jobType='Freelance'
-                            isRemote={true}
-                            date='29 mei 2021'
-                            district='Badung'
-                            province='Bali'
-                        />
-                    </Col>
-                    <Col lg='4'>
-                        <CardJob
-                            classes='margin-bottom-30'
-                            link='#'
-                            title='Frontend Developer (React)'
-                            company='Pekerjaan.APP'
-                            logo='/company_logo/logo-13.png'
-                            isUrgent={true}
-                            jobType='Freelance'
-                            isRemote={true}
-                            date='29 mei 2021'
-                            district='Badung'
-                            province='Bali'
-                        />
-                    </Col>
+                    </Col>)
+                })}
                 </Row>
+
+                <div className='text-center'>
+                    <ButtonLink icon={faListAlt} href='/jobs' text='Lowongan Lainnya' />
+                </div>
             </Container>
         </div>
     )
