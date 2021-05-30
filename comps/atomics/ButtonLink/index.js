@@ -20,7 +20,6 @@ const ButtonLink = ({ style, classes, btnClassType, href, text, icon }) => {
 
 ButtonLink.defaultProps = {
     href: '#',
-    text: 'Button Link'
 }
 
 export default ButtonLink;
