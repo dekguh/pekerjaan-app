@@ -12,7 +12,8 @@ const Footer = ({ classes }) => {
                 <Container>
                     <Row>
                         <Col md='6' lg='4'>
-                            <About description='Kami merupakan platform untuk menemukan lowongan kerja terbaru diseluruh indonesia dengan berbagai jenis kategori.' />
+                            <About
+                                description='Kami merupakan platform untuk menemukan lowongan kerja terbaru diseluruh indonesia dengan berbagai jenis kategori.' />
                         </Col>
 
                         <Col md='6' lg='3'>
