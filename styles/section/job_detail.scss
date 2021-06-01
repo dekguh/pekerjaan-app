@@ -1,0 +1,39 @@
+.job__detail-wrapper {
+    z-index: 9;
+    margin-top: -80px;
+}
+
+.job__detail-inner {
+    background-color: #FFFFFF;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.job__detail-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-gray-primary;
+}
+
+.job__detail-header-info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .job__detail-logo {
+        flex: 0 1 auto;
+
+        img {
+            width: 80px;
+        }
+    }
+
+    .job__detail-info {
+        flex: 1 1 auto;
+        padding-left: 15px;
+
+        .job__detail-title {
+            margin-bottom: 8px;
+        }
+    }
+}
