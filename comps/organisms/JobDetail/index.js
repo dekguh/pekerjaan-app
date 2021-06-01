@@ -1,8 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Content from "../../molecules/jobDetail/Content";
 import Header from '../../molecules/jobDetail/Header';
+import WidgetListJob from "../widget/WidgetListJob";
 
-const JobDetail = ({ classes, dataSingle }) => {
+const JobDetail = ({ classes, dataSingle, dataList }) => {
     return (
         <div className={classes ?  `job__detail-wrapper ${classes}` : 'job__detail-wrapper'}>
             <Container>
@@ -31,7 +32,7 @@ const JobDetail = ({ classes, dataSingle }) => {
                             </Col>
 
                             <Col lg='4'>
-                                widget
+                                <WidgetListJob dataList={dataList} limit={4} />
                             </Col>
                         </Row>
                     </div>
