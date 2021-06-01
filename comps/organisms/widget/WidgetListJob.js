@@ -16,7 +16,7 @@ const WidgetListJob = ({ dataList, limit }) => {
             <ItemListJob key={i}
                 image={data?.companyLogo.url}
                 title={data?.title}
-                link={'#'}
+                link={`/jobs/detail/${data?.id}-${data?.title.replace(/ /g, '-')}`}
                 kabupaten={data?.kabupaten}
                 provinsi={data?.provinsi}
                 date={data?.published_at.replace('Z', '').replace('T', ' ').substring(0, 10).replace(/-/g, '/')}

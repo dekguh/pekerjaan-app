@@ -12,13 +12,11 @@ const ItemListJob = ({ image, title, link, kabupaten, provinsi, date }) => {
 
             <div className='item__listjob-detail'>
                 <span className='item__listjob-date'>diposting pada {date}</span>
-                <Link href={link} className='item__listjob-link'>
-                    <a>
-                        <Title component='h5' classes='item__listjob-title'>
-                            <span>{title}</span>
-                        </Title>
-                    </a>
-                </Link>
+                <a href={link} className='item__listjob-link'>
+                    <Title component='h5' classes='item__listjob-title'>
+                        <span>{title}</span>
+                    </Title>
+                </a>
                 <TextIcon icon={faMapMarkerAlt} text={`${kabupaten}, ${provinsi}`} />
             </div>
         </div>
