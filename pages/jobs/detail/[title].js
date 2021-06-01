@@ -21,7 +21,7 @@ const JobDetailPage = ({ dataFresh }) => {
                 paddingBottom: '120px'
             }} />
 
-            <JobDetail dataSingle={findData} />
+            <JobDetail dataSingle={findData} dataList={dataFresh} />
         </>
     )
 }
