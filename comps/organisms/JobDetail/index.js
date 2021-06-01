@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
+import Content from "../../molecules/jobDetail/Content";
 import Header from '../../molecules/jobDetail/Header';
-import Content from "./Content";
 
 const JobDetail = ({ classes, dataSingle }) => {
     return (
@@ -15,6 +15,10 @@ const JobDetail = ({ classes, dataSingle }) => {
                         isUrgent={dataSingle?.isUrgent}
                         jobType={dataSingle?.typeJob.replace(/_/g, ' ')}
                         isRemote={dataSingle?.isRemote}
+                        kabupaten={dataSingle?.kabupaten}
+                        provinsi={dataSingle?.provinsi}
+                        salary={dataSingle?.salary}
+                        isNegotiable={dataSingle?.isNegotiable}
                     />
 
                     <div className='job__detail-content-wrap margin-top-40'>
