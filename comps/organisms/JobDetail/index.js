@@ -24,7 +24,10 @@ const JobDetail = ({ classes, dataSingle }) => {
                     <div className='job__detail-content-wrap margin-top-40'>
                         <Row>
                             <Col lg='8'>
-                                <Content content={dataSingle?.jobDescription} />
+                                <Content
+                                    content={dataSingle?.jobDescription}
+                                    date={dataSingle?.published_at.replace('Z', '').replace('T', ' ').substring(0, 10).replace(/-/g, '/')}
+                                />
                             </Col>
 
                             <Col lg='4'>
