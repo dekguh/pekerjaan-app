@@ -10,8 +10,6 @@ const WidgetListJob = ({ dataList, limit }) => {
         setDataSort(slice);
     }, []);
 
-    console.log(dataSort)
-
     return (
         <WidgetWrap title='Loker Terbaru'>
         {dataSort.length >= 1 && dataSort.map((data, i) => (
