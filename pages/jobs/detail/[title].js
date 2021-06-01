@@ -4,14 +4,14 @@ import { jsonListDataJob } from "../../../comps/utils/json/data";
 import { useRouter } from 'next/router';
 import { useEffect, useState } from "react";
 
-const JobDetailPage = () => {
+const JobDetailPage = ({ dataFresh }) => {
     const [findData, setFindData] = useState();
     const router = useRouter();
     const { title } = router.query;
     const getId = title.substring(0, 1);
 
     useEffect(() => {
-        const find = jsonListDataJob.find(data => data.id == getId);
+        const find = dataFresh.find(data => data.id == getId);
         setFindData(find);
     }, []);
 
@@ -24,6 +24,29 @@ const JobDetailPage = () => {
             <JobDetail dataSingle={findData} />
         </>
     )
+}
+
+export async function getStaticProps() {
+    const dataFresh = jsonListDataJob;
+    return {
+        props: {
+            dataFresh
+        }
+    }
+}
+
+export async function getStaticPaths() {
+    const fetchTitle = jsonListDataJob.map(data => {
+        return {
+            params: {
+                title: `${data.id}-${data.title.replace(/ /g, '-')}`
+            }
+        }
+    })
+    return {
+        paths: fetchTitle,
+        fallback: false
+    }
 }
 
 
