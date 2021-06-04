@@ -8,6 +8,9 @@ const JobArchivePage = ({ dataFresh }) => {
 
     return (
         <>
+            <Head>
+                <title>Pekerjaan.APP | Temukan Lowongan Kerja</title>
+            </Head>
             <HeaderPage title='Lowongan Kerja' />
             <JobArchive dataList={dataFresh} urlParams={Router.query} />
         </>

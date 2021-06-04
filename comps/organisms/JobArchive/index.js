@@ -35,10 +35,10 @@ const JobArchive = ({ dataList, urlParams }) => {
 
     useEffect(() => {
         let valLoc = formFilter.filtLoc ? formFilter.filtLoc.replace(/Semua_Provinsi/g, '') : '';
-        valLoc = (urlParams?.location?.length >= 1 && valLoc.length <= 0) ? urlParams.location : valLoc;
+        valLoc = (urlParams?.location?.length >= 1 && valLoc.length <= 0) ? urlParams.location.replace(/ /g, '_') : valLoc;
 
         let valCat = formFilter.filtCat ? formFilter.filtCat.replace(/Semua_Kategori/g, '') : '';
-        valCat = (urlParams?.category?.length >= 1 && valCat.length <= 0) ? urlParams.category : valCat;
+        valCat = (urlParams?.category?.length >= 1 && valCat.length <= 0) ? urlParams.category.replace(/ /g, '_') : valCat;
 
         const valMaxSal = formFilter.filtMaxSal > 0 ? formFilter.filtMaxSal : 1000000000;
         let filterFullTime = [],

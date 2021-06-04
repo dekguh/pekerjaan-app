@@ -17,6 +17,9 @@ const JobDetailPage = ({ dataFresh }) => {
 
     return (
         <>
+            <Head>
+                <title>Pekerjaan.APP | Informasi Lowongan</title>
+            </Head>
             <HeaderPage title='Informasi' style={{
                 paddingBottom: '120px'
             }} />
