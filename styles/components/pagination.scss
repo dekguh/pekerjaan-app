@@ -1,0 +1,26 @@
+.pagination__custom {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+
+    .pagination__custom-link {
+        border-width: 1px;
+        border-style: solid;
+        border-color: $color-gray-primary;
+        padding: 8px 15px;
+        transition: .5s;
+
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: #FFFFFF;
+        }
+    }
+
+    .pagination__custom-active {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: #FFFFFF;
+    }
+}

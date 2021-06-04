@@ -110,3 +110,16 @@
         flex: 1 1 auto;
     }
 }
+
+.form__label {
+    display: block;
+}
+
+.form__control-check-toggle {
+    padding: 8px 18px 8px 8px;
+    font-size: 14px;
+
+    input[type="checkbox"] {
+        visibility: hidden;
+    }
+}
