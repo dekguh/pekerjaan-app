@@ -3,7 +3,7 @@ Author: I Kadek Teguh Mahesa<br>
 E-mail: kadekteguhmahesa@gmail.com<br><br>
 
 ## Project status
-project in progress
+finish maybe
 
 ## Goal
 I'm trying to create a platform for job vacancies, the system is still simple where only the admin (in strapi admin dashboard) can add job vacancies.
