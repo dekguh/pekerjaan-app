@@ -3,8 +3,10 @@ import { useState } from "react";
 import FormInputAuto from "../../molecules/FormInputAuto";
 import { jsonListCategory, jsonListProvinsi } from "../../utils/json/data";
 import Button from '../../atomics/Button';
+import { useRouter } from 'next/router';
 
 const HomeHeroSearch = () => {
+    const Router = useRouter();
     const [valLocation, setValLocation] = useState('');
     const [valCategory, setValCategory] = useState('');
 
@@ -16,8 +18,13 @@ const HomeHeroSearch = () => {
         setValCategory(value);
     }
 
+    const handleSubmitSearch = e => {
+        e.preventDefault();
+        Router.push(`/jobs?${valLocation && `location=${valLocation}&`}${valCategory && `category=${valCategory}`}`);
+    }
+
     return (
-        <form className='form__search-hero'>
+        <form method='POST' onSubmit={handleSubmitSearch} className='form__search-hero'>
             <div className='form__search-hero-location'>
                 <FormInputAuto
                     icon={faMapMarkerAlt}
@@ -37,7 +44,7 @@ const HomeHeroSearch = () => {
             </div>
 
             <div className='form__search-hero-button'>
-                <Button icon={faSearch} />
+                <Button type='submit' icon={faSearch} />
             </div>
         </form>
     )
