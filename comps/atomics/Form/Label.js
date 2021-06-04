@@ -2,7 +2,7 @@ import { FormLabel } from 'react-bootstrap';
 
 const Label = ({style, text}) => {
     return(
-        <FormLabel style={style}>{text}</FormLabel>
+        <FormLabel className='form__label' style={style}>{text}</FormLabel>
     );
 }
 
