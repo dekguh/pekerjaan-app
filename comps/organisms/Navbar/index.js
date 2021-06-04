@@ -8,8 +8,8 @@ import NavList from '../../molecules/navbar/NavList';
 const Navbar = () => {
     const [navbarShow, setNavbarShow] = useState(false);
     const listNavbar = [
-        { link: '#', text: 'Beranda' },
-        { link: '#', text: 'Lowongan' },
+        { link: '/', text: 'Beranda' },
+        { link: '/jobs', text: 'Lowongan' },
         { link: '#', text: 'Tentang Kami' },
         { link: '#', text: 'Hubungi Kami' },
     ]
