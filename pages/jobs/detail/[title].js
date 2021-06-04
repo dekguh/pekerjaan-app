@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import HeaderPage from "../../../comps/organisms/HeaderPage";
 import JobDetail from "../../../comps/organisms/JobDetail";
 import { jsonListDataJob } from "../../../comps/utils/json/data";
