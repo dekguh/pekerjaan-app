@@ -11,7 +11,7 @@ const CardJob = ({ classes, link, title, company, logo, isUrgent, jobType, isRem
         <div className={classes ? `card__job ${classes}` : 'card__job'}>
             <div className='card__job-top'>
                 <i className='mr-2'><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
-                <span>{district && `${district}, `}{province && province}</span>
+                <span>{district && `${district.replace(/_/g, ' ')}, `}{province && province.replace(/_/g, ' ')}</span>
             </div>
             <div className='card__job-header'>
                 <div className='card__job-header-logo'>
