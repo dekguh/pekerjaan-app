@@ -4,7 +4,7 @@ import CardJob from '../../molecules/CardJob';
 import Pagination from "../../molecules/Pagination";
 import FormFilterArchive from "../FormFilterArchive";
 
-const JobArchive = ({ dataList }) => {
+const JobArchive = ({ dataList, urlParams }) => {
     const [dataFilter, setDataFilter] = useState(dataList);
     const [formFilter, setFormFilter] = useState({
         filtTitle: '',
@@ -34,8 +34,12 @@ const JobArchive = ({ dataList }) => {
     }
 
     useEffect(() => {
-        const valLoc = formFilter.filtLoc ? formFilter.filtLoc.replace(/Semua_Provinsi/g, '') : '';
-        const valCat = formFilter.filtCat ? formFilter.filtCat.replace(/Semua_Kategori/g, '') : '';
+        let valLoc = formFilter.filtLoc ? formFilter.filtLoc.replace(/Semua_Provinsi/g, '') : '';
+        valLoc = (urlParams?.location?.length >= 1 && valLoc.length <= 0) ? urlParams.location : valLoc;
+
+        let valCat = formFilter.filtCat ? formFilter.filtCat.replace(/Semua_Kategori/g, '') : '';
+        valCat = (urlParams?.category?.length >= 1 && valCat.length <= 0) ? urlParams.category : valCat;
+
         const valMaxSal = formFilter.filtMaxSal > 0 ? formFilter.filtMaxSal : 1000000000;
         let filterFullTime = [],
         filterPartTime = [],
@@ -89,7 +93,7 @@ const JobArchive = ({ dataList }) => {
         filtered = filtered.slice(startOffset, endOffset);
 
         setDataFilter(filtered);
-    }, [paginationInfo, dataList, formFilter]);
+    }, [urlParams, paginationInfo, dataList, formFilter]);
 
     const handlePaginationChange = num => {
         setPaginationInfo({...paginationInfo, selectedPage: num.selected});
