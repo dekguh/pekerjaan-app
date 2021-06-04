@@ -6,10 +6,14 @@ import Button from '../../atomics/Button';
 
 const HomeHeroSearch = () => {
     const [valLocation, setValLocation] = useState('');
-    console.log(valLocation);
+    const [valCategory, setValCategory] = useState('');
 
     const handleReturnValLoc = value => {
         setValLocation(value);
+    }
+
+    const handleReturnValCat = value => {
+        setValCategory(value);
     }
 
     return (
@@ -27,7 +31,7 @@ const HomeHeroSearch = () => {
                 <FormInputAuto
                     icon={faListAlt}
                     list={jsonListCategory}
-                    returnValue={handleReturnValLoc}
+                    returnValue={handleReturnValCat}
                     placeholder='pilih kategori'
                 />
             </div>
